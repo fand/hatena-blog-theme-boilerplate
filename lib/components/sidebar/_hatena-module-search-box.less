@@ -1,0 +1,48 @@
+@import "_variable";
+@import "_mixin";
+
+.hatena-module-search-box {
+
+    .search-form {
+        border: 1px solid @border;
+        .border-radius(3px);
+        width: 100%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .search-module-input {
+        padding: 5px;
+        color: @text;
+        background: none;
+        border: none;
+        outline: none;
+        height: 20px;
+        width: 90%;
+    }
+
+    .search-module-button {
+        width: 20px;
+        height: 20px;
+        background: transparent url(http://blog.hatena.ne.jp/images/theme/search.png) no-repeat right center;
+        border: none;
+        outline: none;
+        text-indent: -9999px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        opacity: 0.5;
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}
+
+// For Retina
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .hatena-module-search-box .search-module-button {
+        background: transparent url(http://blog.hatena.ne.jp/images/theme/search@2x.png) no-repeat right center;
+        background-size: 20px 20px;
+    }
+}

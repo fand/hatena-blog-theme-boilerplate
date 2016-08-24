@@ -1,0 +1,53 @@
+@import "_variable";
+@import "objects/_button";
+
+.entry-header {
+    padding: 0 0 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid @border;
+    position: relative;
+
+    .entry-title {
+        margin: 0;
+        line-height: 1.3;
+        font-size: 160%;
+    }
+    .entry-date {
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        a {
+            color: @link;
+            text-decoration: none;
+            font-size: 90%;
+        }
+    }
+    .entry-categories {
+        margin-top: 10px;
+        font-size: 80%;
+        a {
+            color: @text-light;
+        }
+        &.no-categories {
+            margin: 0;  // カテゴリー無いとき
+        }
+    }
+}
+
+// 「編集する」ボタン
+.entry-header-menu {
+    position: absolute;
+    bottom: 0px;
+    left: -60px;
+    a {
+        .btn;
+    }
+}
+
+// For small tablets
+@media (max-width: calc(@width-tablet - 1)) {
+    .entry-header-menu {
+        top: -30px;
+        left: 0px;
+    }
+}

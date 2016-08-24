@@ -1,0 +1,27 @@
+{
+  "name": "@fand/hatena-blog-theme-boilerplate",
+  "description": "A boilerplate for Hatena Blog theme using Less and ITCSS",
+  "version": "0.0.0",
+  "author": "fand <fand@gmork.in>",
+  "bugs": {
+    "url": "https://github.com/fand/hatena-blog-theme-boilerplate/issues"
+  },
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "less": "^2.7.1",
+    "less-plugin-glob": "^1.1.1"
+  },
+  "homepage": "https://github.com/fand/hatena-blog-theme-boilerplate/issues",
+  "license": "MIT",
+  "main": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fand/hatena-blog-theme-boilerplate"
+  },
+  "scripts": {
+    "build": "lessc --include-path=lib --glob index.less > index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

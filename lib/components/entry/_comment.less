@@ -1,0 +1,64 @@
+@import "_variable";
+@import "_mixin";
+
+.comment-box {
+
+    ul {
+        list-style: none;
+        margin: 0 0 15px 0;
+        padding: 0;
+        font-size: 95%;
+        line-height: 1.7;
+    }
+
+    li {
+        padding: 10px 0 10px 60px;
+        border-bottom: 1px solid @border;
+        position: relative;
+        &:first-child {
+            border-top: 1px solid @border;
+        }
+    }
+
+    .read-more-comments {
+        padding-left: 0;
+    }
+
+    .hatena-id-icon {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 50px !important;
+        height: 50px !important;
+        .border-radius(3px);
+    }
+
+}
+
+.comment-user-name {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.comment-content {
+    font-size: 90%;
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+
+    p {
+        margin: 0 0 10px 0;
+    }
+}
+
+.comment-metadata {
+    font-size: 80%;
+    color: @text-light;
+    margin: 0;
+    a {
+        color: @text-light;
+    }
+}
+
+.leave-comment-title {
+    .btn;
+}
