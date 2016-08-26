@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "less": "^2.7.1",
+    "less-plugin-clean-css": "^1.5.1",
     "less-plugin-glob": "^1.1.1"
   },
   "homepage": "https://github.com/fand/hatena-blog-theme-boilerplate/issues",
@@ -21,7 +22,7 @@
     "url": "https://github.com/fand/hatena-blog-theme-boilerplate"
   },
   "scripts": {
-    "build": "lessc --include-path=lib --glob index.less > index.css",
+    "build": "lessc --include-path=lib --glob --clean-css=\"--advanced\" index.less > index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
