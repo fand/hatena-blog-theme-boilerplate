@@ -24,7 +24,8 @@
     "url": "https://github.com/fand/hatena-blog-theme-boilerplate"
   },
   "scripts": {
-    "build": "node-sass --importer=node_modules/node-sass-globbing/index.js --include-path=lib index.scss > index.css",
+    "build": "node-sass --importer=node_modules/node-sass-globbing/index.js --include-path=lib index.scss -o .",
+    "watch": "node-sass -w --importer=node_modules/node-sass-globbing/index.js --include-path=lib index.scss -o .",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
