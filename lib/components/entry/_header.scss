@@ -40,7 +40,7 @@
     bottom: 0px;
     left: -60px;
     a {
-        .btn;
+        @extend .btn;
     }
 }
 
