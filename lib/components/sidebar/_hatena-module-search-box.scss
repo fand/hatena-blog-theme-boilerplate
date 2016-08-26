@@ -4,8 +4,8 @@
 .hatena-module-search-box {
 
     .search-form {
-        border: 1px solid @border;
-        .border-radius(3px);
+        border: 1px solid $border;
+        @include border-radius(3px);
         width: 100%;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -14,7 +14,7 @@
 
     .search-module-input {
         padding: 5px;
-        color: @text;
+        color: $text;
         background: none;
         border: none;
         outline: none;

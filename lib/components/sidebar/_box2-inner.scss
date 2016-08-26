@@ -6,7 +6,7 @@
 }
 
 // For small tablets
-@media (max-width: calc(@width-tablet - 1)) {
+@media (max-width: calc($width-tablet - 1)) {
     #box2-inner {
         width: 100%;
     }

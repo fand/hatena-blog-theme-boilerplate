@@ -13,10 +13,10 @@
 
     li {
         padding: 10px 0 10px 60px;
-        border-bottom: 1px solid @border;
+        border-bottom: 1px solid $border;
         position: relative;
         &:first-child {
-            border-top: 1px solid @border;
+            border-top: 1px solid $border;
         }
     }
 
@@ -30,7 +30,7 @@
         left: 0;
         width: 50px !important;
         height: 50px !important;
-        .border-radius(3px);
+        @include border-radius(3px);
     }
 
 }
@@ -52,13 +52,13 @@
 
 .comment-metadata {
     font-size: 80%;
-    color: @text-light;
+    color: $text-light;
     margin: 0;
     a {
-        color: @text-light;
+        color: $text-light;
     }
 }
 
 .leave-comment-title {
-    .btn;
+    @extend .btn;
 }

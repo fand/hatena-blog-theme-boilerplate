@@ -12,7 +12,9 @@
   "devDependencies": {
     "less": "^2.7.1",
     "less-plugin-clean-css": "^1.5.1",
-    "less-plugin-glob": "^1.1.1"
+    "less-plugin-glob": "^1.1.1",
+    "node-sass": "^3.8.0",
+    "sass-glob-importer": "^1.0.1"
   },
   "homepage": "https://github.com/fand/hatena-blog-theme-boilerplate/issues",
   "license": "MIT",
@@ -22,7 +24,7 @@
     "url": "https://github.com/fand/hatena-blog-theme-boilerplate"
   },
   "scripts": {
-    "build": "lessc --include-path=lib --glob --clean-css=\"--advanced\" index.less > index.css",
+    "build": "node-sass --importer node_modules/sass-glob-importer/lib/index.js --include-path=lib index.scss > index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

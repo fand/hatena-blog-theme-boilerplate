@@ -30,7 +30,7 @@
 }
 
 // For tablets
-@media (min-width: @width-tablet) and (max-width: @width-pc) {
+@media (min-width: $width-tablet) and (max-width: $width-pc) {
     #container {
         width: 724px;
     }
@@ -45,7 +45,7 @@
 }
 
 // For small tablets and smartphones
-@media (max-width: calc(@width-tablet - 1)) {
+@media (max-width: calc($width-tablet - 1)) {
 
     #globalheader-container {
         position: static;
@@ -98,7 +98,7 @@
 //     }
 // }
 //
-// @media (min-width: @width-tablet) and (max-width: @width-pc) {
+// @media (min-width: $width-tablet) and (max-width: $width-pc) {
 //     #main,
 //     #box2 {
 //         width: 100%;

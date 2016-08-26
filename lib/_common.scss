@@ -4,29 +4,29 @@
 html,
 body {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
-    color: @text;
-    background-color: @background;
+    color: $text;
+    background-color: $background;
 }
 
 a {
-    color: @link;
+    color: $link;
     &:hover {
-        color: @hover;
+        color: $hover;
     }
     &:visited {
-        color: @visited;
+        color: $visited;
     }
 }
 
 h1,h2,h3,h4,h5,h6 {
     a,a:hover,a:visited {
-        color: @text-header;
+        color: $text-header;
         text-decoration: none;
     }
 }
 
 a.keyword {
     text-decoration: none;
-    border-bottom: 1px dotted @border;
-    color: @text;
+    border-bottom: 1px dotted $border;
+    color: $text;
 }
