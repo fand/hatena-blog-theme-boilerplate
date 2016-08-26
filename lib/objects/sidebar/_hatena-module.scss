@@ -8,7 +8,7 @@
         margin-bottom: 15px;
         font-size: 120%;
         a {
-            color: @text;
+            color: $text;
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
@@ -18,7 +18,7 @@
 }
 
 // For small tablets
-@media (max-width: calc(@width-tablet - 1)) {
+@media (max-width: calc($width-tablet - 1)) {
     .hatena-module {
         width: 100%;
         float: none;

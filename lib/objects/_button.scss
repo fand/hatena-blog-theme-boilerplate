@@ -2,15 +2,15 @@
 @import "_mixin";
 
 .btn {
-    .inline-block;
+    @extend .inline-block;
     padding: 4px 10px 4px;
     margin-bottom: 0;
     line-height: 18px;
-    color: @text;
-    background-color: @btn;
+    color: $text;
+    background-color: $btn;
     text-align: center;
     vertical-align: middle;
-    .border-radius(2px);
+    @include border-radius(2px);
     cursor: pointer;
     font-size: 12px;
     text-decoration: none;
@@ -18,7 +18,7 @@
     border: 1px solid rgba(0,0,0,.2);
     text-decoration: none !important;
     &:hover {
-      background-color: @btn-hover;
+      background-color: $btn-hover;
       text-decoration: none !important;
     }
 }

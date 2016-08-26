@@ -1,3 +1,5 @@
+@import '../_mixin';
+
 .page-archive {
 
     .archive-entries {
@@ -30,7 +32,7 @@
         padding: 3px 5px;
         border-radius: 3px;
         text-decoration: none;
-        .inline-block;
+        @extend .inline-block;
         margin-right: 2px;
     }
 
