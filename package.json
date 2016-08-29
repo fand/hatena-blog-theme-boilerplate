@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "author": "fand <fand@gmork.in>",
   "bin": {
-    "hbt": "bin/cli.sh",
+    "hbt": "bin/cli.sh"
   },
   "bugs": {
     "url": "https://github.com/fand/hatena-blog-theme-boilerplate/issues"
