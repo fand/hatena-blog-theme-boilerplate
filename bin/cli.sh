@@ -9,8 +9,23 @@ PROJECT_NAME=$1
 PROJECT_DIR=$(pwd)/$PROJECT_NAME
 PROJECT_DIR_BASE=$(basename $PROJECT_DIR)
 
-# TODO: Set $PROJECT_DIR current directory
-# TODO: Check if the project dir exists
+# Check args
+usage () {
+    cat <<EOS
+Usage:
+    $(basename ${0}) [theme_name]
+
+EOS
+    exit 1
+}
+if [ -z "$PROJECT_NAME" ]; then
+  echo "Invalid theme name: \"$PROJECT_NAME\""
+  usage
+fi
+if [ -d $PROJECT_DIR ]; then
+  echo "Directory \"$PROJECT_DIR\" already exists"
+  usage
+fi
 
 echo "\nCreate new Hatena Blog theme: "$PROJECT_NAME"\n"
 
@@ -22,7 +37,7 @@ for name in lib scripts .gitignore index.scss package.json LICENSE.md; do
   cp -r $PACKAGE_DIR/$name $PROJECT_DIR/$name
 done
 
-echo "> Generationg README.md ..."
+echo "> Generating README.md ..."
 echo << EOS > $PROJECT_DIR/README.md
 # $PROJECT_NAME
 #
