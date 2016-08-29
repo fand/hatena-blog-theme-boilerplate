@@ -13,6 +13,7 @@
     "normalize.css": "^4.2.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.14.0",
     "less": "^2.7.1",
     "less-plugin-clean-css": "^1.5.1",
     "less-plugin-glob": "^1.1.1",
@@ -29,6 +30,7 @@
   "scripts": {
     "build": "node-sass --importer=node_modules/node-sass-globbing/index.js --include-path=lib index.scss -o .",
     "watch": "node-sass -w --importer=node_modules/node-sass-globbing/index.js --include-path=lib index.scss -o .",
+    "serve": "browser-sync start -c bs-config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
