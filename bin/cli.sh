@@ -32,13 +32,13 @@ echo "\nCreate new Hatena Blog theme: "$PROJECT_NAME"\n"
 echo "> mkdir $PROJECT_DIR_BASE"
 mkdir $PROJECT_DIR
 
-for name in lib scripts .gitignore index.scss package.json LICENSE.md; do
+for name in lib .gitignore bs-config.js index.scss LICENSE.md package.json; do
   echo "> cp -r $PACKAGE_DIR_BASE/$name $PROJECT_DIR_BASE/$name"
   cp -r $PACKAGE_DIR/$name $PROJECT_DIR/$name
 done
 
 echo "> Generating README.md ..."
-echo << EOS > $PROJECT_DIR/README.md
+cat << EOS > $PROJECT_DIR/README.md
 # $PROJECT_NAME
 #
 A theme for Hatena Blog.
