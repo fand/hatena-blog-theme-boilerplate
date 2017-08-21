@@ -1,5 +1,7 @@
 # hatena-blog-theme-boilerplate
 
+English | [日本語](./README.ja.md)
+
 A theme boilerplate for [Hatena Blog](http://hatenablog.com).
 
 
