@@ -29,8 +29,8 @@
     "url": "https://github.com/fand/hatena-blog-theme-boilerplate"
   },
   "scripts": {
-    "build": "node-sass --include-path=lib index.scss -o .",
-    "watch": "node-sass -w -r . --include-path=lib index.scss -o .",
+    "build": "node-sass --include-path=lib lib/index.scss -o .",
+    "watch": "node-sass -w -r . --include-path=lib lib/index.scss -o .",
     "serve": "browser-sync start -c bs-config.js",
     "start": "npm-run-all -p watch serve",
     "test": "echo \"Error: no test specified\" && exit 1"
