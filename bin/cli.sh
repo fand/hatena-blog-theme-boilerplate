@@ -40,7 +40,7 @@ done
 echo "> Generating README.md ..."
 cat << EOS > $PROJECT_DIR/README.md
 # $PROJECT_NAME
-#
+
 A theme for Hatena Blog.
 EOS
 
