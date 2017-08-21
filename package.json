@@ -1,7 +1,7 @@
 {
   "name": "@fand/hatena-blog-theme-boilerplate",
   "description": "A boilerplate for Hatena Blog theme using Sass and ITCSS",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "fand <fand@gmork.in>",
   "bin": {
     "hbt": "bin/cli.sh"
