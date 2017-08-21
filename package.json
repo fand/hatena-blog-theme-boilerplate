@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "chokidar-cli": "^1.2.0",
     "less": "^2.7.1",
     "less-plugin-clean-css": "^1.5.1",
     "less-plugin-glob": "^1.1.1",
@@ -29,8 +30,12 @@
     "url": "https://github.com/fand/hatena-blog-theme-boilerplate"
   },
   "scripts": {
-    "build": "node-sass --include-path=lib lib/index.scss -o .",
-    "watch": "node-sass -w -r . --include-path=lib lib/index.scss -o .",
+    "build": "[ -f lib/index.scss ] && npm run build:scss || npm run build:less",
+    "watch": "[ -f lib/index.scss ] && npm run watch:scss || npm run watch:less",
+    "build:less": "lessc --include-path=lib lib/index.less index.css",
+    "watch:less": "chokidar 'lib/**/*.less' -c 'npm run build:less'",
+    "build:scss": "node-sass --include-path=lib lib/index.scss -o .",
+    "watch:scss": "chokidar 'lib/**/*.scss' -c 'npm run build:scss'",
     "serve": "browser-sync start -c bs-config.js",
     "start": "npm-run-all -p watch serve",
     "test": "echo \"Error: no test specified\" && exit 1"
