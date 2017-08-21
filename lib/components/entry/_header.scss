@@ -45,7 +45,7 @@
 }
 
 // For small tablets
-@media (max-width: calc($width-tablet - 1)) {
+@media (max-width: $width-tablet - 1) {
     .entry-header-menu {
         top: -30px;
         left: 0px;
